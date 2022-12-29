@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+:root {
+    --branco-texto: #EAEAEA;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    min-height: 450px;
+    text-align: center;
+    background: url('../img/back-cabecalho.jpg') no-repeat center;
+    background-size: cover;
+    color: var(--branco-texto);
+    opacity: .7;
+}
+
+.cabecalho__titulo {
+    padding: 100px 30px 30px 30px;
+    text-shadow: 5px 5px 0px black;
+}
+
+.cabecalho__texto {
+    margin: auto;
+    max-width: 800px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px black;
+    padding: 0px 30px 20px 30px;
+}
+
+.cabecalho__botao {
+    display: inline-block;
+    padding: 20px;
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+}
+
+
+section {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.titulo {
+    padding: 20px;
+    opacity: .9;
+}
+
+.texto {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    opacity: .9;
+}
+
+.section-1 {
+    min-height: 450px;
+    background-color: rgb(230, 222, 222);
+}
+
+.section-1__titulo {
+    padding: 30px;
+}
+
+.central {
+    display: grid;
+    margin: 0 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px 0px;
+    background-color: rgb(29, 26, 26);
+}
+
+.div__central {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.img {
+    width: 100%;
+}
+
+.section__white {
+    background-color: white;
+}
+
+.section__blue {
+    background-color: rgb(81, 81, 248);
+    color: white;
+}
+
+.section__gray {
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(55, 55, 236);
+}
