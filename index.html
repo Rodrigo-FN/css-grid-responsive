@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="./estilos/media-query.css">
     <title>CSS Grid Responsive Site</title>
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo">Welcome to Acme Web Solutions</h1>
-        <p class="cabecalho__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus repellat iste, a rerum qui. Sunt eligendi, non dolore adipisci laboriosam quis maiores ut officia sapiente obcaecati, ipsa cumque illum.</p>
-        <a class="cabecalho__botao" href="#">Read More</a>
+        <div class="cabecalho__div"> 
+            
+        </div>
+            <h1 class="cabecalho__titulo">Welcome to Acme Web Solutions</h1>
+            <p class="cabecalho__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus repellat iste, a rerum qui. Sunt eligendi, non dolore adipisci laboriosam quis maiores ut officia sapiente obcaecati, ipsa cumque illum.</p>
+            <a class="cabecalho__botao" href="#navega">Read More</a>
+        
     </header>
     <main>
         <section class="section-1">
-            <h2 class="section-1__titulo titulo">Web & Application Development</h2>
-            <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe repellat ducimus reprehenderit id in ipsam voluptates dignissimos dicta tenetur, dolorem accusamus, distinctio est quam veritatis illo. Nulla similique autem et.</p>
+            <h2 class="section-1__titulo titulo titulo_web">Web & Application Development</h2>
+            <p class="texto texto_web">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe repellat ducimus reprehenderit id in ipsam voluptates dignissimos dicta tenetur, dolorem accusamus, distinctio est quam veritatis illo. Nulla similique autem et.</p>
+            <p class="texto texto_web">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nesciunt error quia libero, minima rerum aliquam soluta delectus beatae perspiciatis eius corrupti modi nisi illum inventore iste amet accusantium repellendus.</p>
         </section>
         
         <section class="central">
@@ -38,26 +44,28 @@
         </section>
 
         <section class="section__white">
-            <h2 class="titulo">We Handle all of your digital needs</h2>
+            <h2 class="titulo"><a name="navega">We Handle all of your digital needs</a></h2>
             <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos officia voluptatem sequi ad in dolorum laborum temporibus facere, reiciendis autem molestias quas nihil veniam fugit doloremque fuga quisquam quae impedit.</p>
         </section>
 
-        <section class="section__blue">
-            <h2 class="titulo">Contact Us</h2>
-            <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque facere enim tenetur necessitatibus exercitationem eveniet recusandae explicabo obcaecati sapiente, placeat quisquam quis nobis deleniti, quae soluta cupiditate aut minus animi.</p>
-
-            <cite><p class="texto">contact@acmewebsolutions.test</p></cite>
-        </section>
-
-        <section class="section__gray">
-            <h2 class="titulo">About Our Company</h2>
-            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque, facere adipisci minima maiores non sit illum consequuntur rem aliquam hic neque eius rerum nisi necessitatibus dicta dolor dolore cupiditate?</p>
-        </section>
+        <div class="section__grid">
+            <section class="section__blue">
+                <h2 class="titulo">Contact Us</h2>
+                <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque facere enim tenetur necessitatibus exercitationem eveniet recusandae explicabo obcaecati sapiente, placeat quisquam quis nobis deleniti, quae soluta cupiditate aut minus animi.</p>
+                <cite><p class="texto">contact@acmewebsolutions.test</p></cite>
+            </section>
+            <section class="section__gray">
+                <h2 class="titulo">About Our Company</h2>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque, facere adipisci minima maiores non sit illum consequuntur rem aliquam hic neque eius rerum nisi necessitatibus dicta dolor dolore cupiditate?</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p class="texto">Acme Web Solutions</p>
-        <p>Project By <a href="https://github.com/Rodrigo-FN" target="_blank">Rodrigo Faria</a></p>
-        <p>website inspired by <a href="https://traversymedia.com/" target="_blank">Traversy Media</a></p>
+        <div class="section__grid">
+            <p>Project By <a href="https://github.com/Rodrigo-FN" target="_blank">Rodrigo Faria</a></p>
+            <p>website inspired by <a href="https://traversymedia.com/" target="_blank">Traversy Media</a></p>
+        </div>
     </footer>
 </body>
 </html>

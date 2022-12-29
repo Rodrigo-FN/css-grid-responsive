@@ -19,31 +19,49 @@ body {
 .cabecalho {
     min-height: 450px;
     text-align: center;
-    background: url('../img/back-cabecalho.jpg') no-repeat center;
-    background-size: cover;
     color: var(--branco-texto);
-    opacity: .7;
 }
 
+.cabecalho__div {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: url('../img/back-cabecalho.jpg') no-repeat center;
+    background-size: cover;
+    opacity: .2;
+    z-index: 1;
+}
+
+
 .cabecalho__titulo {
+    position: relative;
     padding: 100px 30px 30px 30px;
-    text-shadow: 5px 5px 0px black;
+    z-index: 3;
 }
 
 .cabecalho__texto {
+    position: relative;
     margin: auto;
     max-width: 800px;
     font-size: 20px;
-    text-shadow: 1px 1px 0px black;
     padding: 0px 30px 20px 30px;
+    z-index: 3;
 }
 
 .cabecalho__botao {
+    position: relative;
     display: inline-block;
     padding: 20px;
     background-color: gray;
-    color: black;
+    color: white;
     text-decoration: none;
+    border: 1px solid white;
+    z-index: 3;
+}
+
+.cabecalho__botao:hover {
+    background-color: #EAEAEA;
+    color: rgb(34, 33, 33);
 }
 
 

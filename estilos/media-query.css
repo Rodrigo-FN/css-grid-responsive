@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+    .cabecalho {
+        margin: auto;
+        max-width: 750px;
+    }
+
+    .cabecalho__div {
+        left: 0;
+    }
+
+    .cabecalho__botao {
+        background-color: rgb(66, 66, 66);
+        padding: 20px 50px;
+    }
+
+    .section-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+            'titulo_web'
+            'texto_web'
+        ;
+    } 
+
+    .titulo_web {
+        grid-column: span 2;
+    }
+
+    .texto_web{
+        margin: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.616);
+    }
+
+    .central {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .div__central {
+        margin-left: 20px;
+    }
+
+    .section__white {
+        height: 250px;
+    }
+
+    .section__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+   
+}
